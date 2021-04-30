@@ -1,112 +1,139 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Module 2 Solution</title>
-    
-<style>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Assignment Solution for Module 3</title>
+	<link rel="stylesheet" href="Lecture25/css/bootstrap.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
 
-    * {
-    box-sizing: border-box;
-  }
-
-h1{text-align: center;}
-
-body
-{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    <style>
+    #header-nav {
+	background-color: gray;
+	border-radius: 0;
+	border: 2px solid black;
 }
 
-.first , .second , .third
-{
-    background-color: grey;
-    border: black solid 1px;
-    position: relative;
+#nav-list {
+	background-color: white;
 }
 
-.row > div
-{
-    padding: 5px;
+.brand {
+	color: black;
+	font-size: 150%;
 }
 
-.title1 , .title2 , .title3
-{
-    border: black solid 1px;
-    width: 100px;
-    margin-top: 0px;
-    text-align: center;
-    font-size: 1.5em;
-    padding: 5px;
-    position: absolute;
-    right: 0px;
+h2 {
+	color: black;
+	width: 100%;
+	font-size: 150%;
+	text-align: center;
+	padding-top: 10px;
 }
 
-.title1{background-color: pink;}
-.title2{background-color: red; color: white;}
-.title3{background-color: yellow;}
-
-.content
-{
-    margin-top: 40px;
-    padding: 5px;
+h1 {
+  width: 100%;
+  height: 50px;
+  font-size: 200%;
+  text-align: center;
 }
 
-@media (min-width : 992px)
-{
-    .row > div
-    {
-        float: left;
-        width: 33.33%;
-    }
+.section {
+	background-color: gray;
+	margin-right: 15px;
 }
 
-@media (min-width : 768px) and (max-width : 991px)
-{
-    .row > div
-    {
-        float: left;
-        width: 50%;
-    }
-    .row > div:nth-child(3)
-    {
-        width: 100%;
-    }
+.words {
+	color: black;
+}
+
+p {
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+}
+
+li {
+	text-align: center;
+}
+
+#selection {
+	border-top: 2px solid black;
+}
+
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 2px solid black;
+ }
+
+.navbar-nav {
+	margin: 0px 0px;
+}
+
+.navbar-collapse {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: gray;
 }
 
 </style>
-
 </head>
-
 <body>
+	<header>
+		<nav id="header-nav" class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<div class="navbar-brand" >
+						<span class="brand">Food,LLC</span>
+					</div>
+					<button type="button" class="navbar-toggle collapsed visible-xs" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                </button>
+	            </div>
 
+                <div id="collapsable-nav" class="collapse navbar-collapse">
+		            <ul id="nav-list" class="nav navbar-nav navbar-right visible-xs">
+		                <li id="selection"><a href="#food1"> Chicken</a>
+		                </li>
+		                <li id="selection"><a href="#food2"> Beef</a>
+		                </li>
+		                <li id="selection"><a href="#food3"> Sushi</a>
+		                </li>
+		            </ul>
+		        </div>
+			</div>
+		</nav>
+	</header>
     <h1>Our Menu</h1>
-    <div class="row">
-
-        <div>
-        <div class="first">
-            <p class="title1">Chicken</p>
-            <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-        </div>
-        </div>
-
-        <div>
-        <div class="second">
-            <p class="title2">Beef</p>
-            <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-        </div>
-        </div>
-
-        <div>
-        <div class="third">
-        <p class="title3">Sushi</p>
-            <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-        </div>
-        </div>
-
-    </div>
-
-
+    <div class="container">
+	    <div class="row">
+	  	    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+	  		    <div id="food1" class="section">
+	  		    	<h2 class="words">Chicken</h2><p class="words content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<a href="#header-nav">Back To Top</a></p>
+	  		    </div>
+	  	    </div>
+	  	    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+	  		    <div id="food2" class="section">
+	  		    	<h2 class="words">Beef</h2><p class="words content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<a href="#header-nav">Back To Top</a></p>
+	  		    </div>
+	  	    </div>
+	  	    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+	  		    <div id="food3" class="section">
+	  		    	<h2 class="words">Sushi</h2><p class="words content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<a href="#header-nav">Back To Top</a></p>
+	  		    </div>
+	  	    </div>
+	    </div>
+	</div>
+    <script src="Lecture25/js/jquery-1.11.3.min.js"></script>
+    <script src="Lecture25/js/bootstrap.min.js"></script>
+    <script src="Lecture25/js/script.js"></script>
 </body>
 </html>
